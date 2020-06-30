@@ -1,0 +1,396 @@
+@import vars
+@import fonts
+@import libs
+
+*
+ font-family: $monts
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	padding: 0
+	margin: 0
+	font-family: $monts
+	color: #ffffff
+	background-color: #ffffff
+	
+a
+	color: inherit
+	text-decoration: none
+	&:hover
+		color: inherit
+		text-decoration: none
+
+ul,li
+	list-style: none
+	margin: 0
+	padding: 0
+
+
+h1,h2,h3,h4,h5,h6
+	margin: 0
+
+button
+	font-family: $monts
+
+//Custom style
+
+.default-title	
+	font-weight: 700
+	font-size: 28px
+	color: #0d151b
+	margin: 75px auto 20px auto
+	text-align: center
+
+.default-description
+	margin:  0 auto
+	font-weight: 600
+	font-size: 18px
+	margin-bottom: 20px
+	color: #0d151b
+	text-align: center
+
+
+/*--------------HEADER------------------*/
+
+.header
+	background-image: url("../img/_src/header-bg.png")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 70% 0%
+	position: relative
+	&_gps
+		margin-left: auto
+		font-weight: 500
+		font-size: 18px
+		position: relative
+		&::before
+			content: "\e804"
+			font-family: "Icon"
+			position: absolute
+			left: -34px
+			top: -6px
+			font-size: 40px
+			color: $main
+	&_contact
+		margin-left: auto
+		font-weight: 600
+		color: #0f0f0f
+	&_mobile
+		font-size: 24px
+	&_call
+		font-size: 14px
+		font-weight: 400
+	&-main
+		display: flex
+		margin-top: 130px
+		margin-bottom: 219px
+	&_title
+		font-weight: 800
+		font-size: 48px
+		margin-bottom: 52px
+		& span
+			font-weight: 600
+			font-size: 28px
+			display: block
+	&_list
+		& li
+			margin-bottom: 34px
+			margin-left: 67px
+		& i
+			width: 50px
+			height: 50px
+			background-color: $main
+			display: block
+			position: absolute
+			left: 5px
+			border-radius: 50%
+			text-align: center
+			line-height: 2
+			color: $black
+			font-size: 25px
+	&_img
+		width: 70%
+		position: absolute
+		z-index: 0
+		right: -10%
+		bottom: 180px
+	&_offer
+		z-index: 1
+.btn
+	display: block
+	width: 330px
+	height: 80px
+	text-align: center
+	line-height: 2.5
+	&__offer
+		height: 70px
+		background-color: #ffd42f
+		border: none
+		border-bottom: 4px solid #f6af20
+		border-radius: 4px
+		transition: background-color, box-shadow .3s linear
+		box-shadow: 0px 0px 20.52px 1.48px rgba(236, 162, 14, 0.81)
+		font-size: 18px
+		font-weight: 600
+		position: relative
+		& span
+			z-index: 1
+		&:hover
+			background-color: darken(#ffd42f, 5%)
+			box-shadow: 0px 0px 20.52px 6.48px rgba(236, 162, 14, 0.81)
+			cursor: pointer
+		&::before
+			content: url("../img/_src/btn_bg.png")
+			position: absolute
+			left: 0
+			top: 0
+			z-index: 0
+
+
+.nav
+	display: flex
+	margin-top: 26px
+
+
+.logo
+	width: 275px
+	height: 65px
+	text-align: center
+	padding-left: 10px
+	position: relative
+	margin-right: auto
+	&_wrap
+		background-color: $black
+		border-radius: 25px
+		text-align: left
+		padding: 13px 0px 13px 70px
+	&_name
+		font-weight: 800
+		font-size: 20px
+		color: $main
+		display: block
+		line-height: 20px
+		margin-bottom: -5px
+	&_direction
+		font-weight: 500
+		font-size: 12px
+		line-height: 20px
+	&::before
+		content: url("../img/_src/logo.png")
+		width: 100px
+		height: 63px
+		border-radius: 50px
+		background-color: $main
+		display: block
+		text-align: center
+		// line-height: 5
+		padding-top: 8px
+		position: absolute
+		left: -30px
+		bottom: 0
+
+		
+/*--------------HEADER END------------------*/
+
+
+
+
+
+
+
+
+
+/*--------------Advantage ------------------*/
+
+
+.advantage
+	color: #0d151b
+	text-align: center
+	&_wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&_item
+		background-color: #fbfbfb
+		width: calc( 33.3333333333% - 40px )
+		box-shadow: 0px 12px 36.9px 8.1px rgba(0, 0, 0, 0.05)
+		padding: 0px 40px
+		border: 1px solid transparent
+		& img
+			margin-bottom: 35px
+		&_name
+			font-weight: 700
+			font-size: 14px
+			& span
+				font-weight: 500
+				display: block
+		&_about
+			font-weight: 500
+			font-size: 14px
+
+
+
+
+/*--------------Advantage END------------------*/
+
+
+
+
+
+/*-------------- CATALOG ------------------*/
+
+.catalog
+	color: #0d151b
+	&-wrap
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+		padding: 0
+		height: 890px
+		margin-bottom: 40px
+		overflow: hidden
+	&-item
+		width: calc( 25% - 13px)
+		border: 1px solid #c1c1c1
+		text-align: center
+		border-radius: 5px
+		margin-bottom: 19px
+		margin-right: 13px
+		padding-bottom: 27px
+		&:nth-child(4n)
+			margin-right: 0
+		& img
+			margin-top: 18px
+			margin-bottom: 28px
+		&_name
+			font-family: $monts
+			font-weight: 900
+			font-size: 18px
+			height: 70px
+		&_description
+			border-top: 1px solid #e0e0e0
+		&__time
+			margin-top: 23px
+			font-weight: 600
+			font-size: 12px
+			color: #000000
+			margin-bottom: 10px
+		&__price
+			margin-bottom: 15px
+		&__new
+			margin-right: 15px
+			font-family: $sans
+			font-weight: 800
+			font-size: 18px
+			color: #f0b318
+		&__old
+			font-family: $sans
+			font-weight: 700
+			font-size: 18px
+			color: #9b9da9
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				width: 100%
+				height: 2px
+				background-color: #9b9da9
+
+.btn
+	&_order
+		width: 96%
+		margin:  0 auto
+		height: 60px
+		background-color: #ffce32
+		border: none
+		border-bottom: 3px solid #f6af20
+		border-radius: 5px
+		transition: box-shadow .2s ease
+		box-shadow: 0px 0px 20.52px 0.48px rgba(236, 162, 14, 0.81)
+		font-family: $monts
+		font-weight: 600
+		font-size: 16px
+		cursor: pointer
+		&:hover
+			box-shadow: 0px 0px 20.52px 2.48px rgba(236, 162, 14, 0.81)
+
+.btn_more
+	margin:  0 auto
+	border: none
+	background-color: #ffd130
+	border-radius: 5px
+	border-bottom: 4px solid #f6af20
+	font-size: 18px
+	font-weight: 600
+	box-shadow: 0px 5px 20.52px 2.48px rgba(236, 162, 14, 0.81)
+	cursor: pointer
+	transition: background, box-shadow .2s linear
+	margin-bottom: 80px
+	&:hover
+		background-color: darken(#ffd130, 5%)
+		box-shadow: 0px 5px 20.52px 6.48px rgba(236, 162, 14, 0.81)
+
+/*-------------- CATALOG END------------------*/
+
+
+
+
+
+
+
+
+
+/*-------------- SERVICE ------------------*/
+
+
+.service
+	color: #0d151b
+	& .default-title
+		margin-top: 0
+		margin-bottom: 40px
+	&-list
+		& li
+			border: 1px solid #bbbbbb
+			display: flex
+			align-items: center
+			padding: 20px 0px 20px 20px
+			margin-bottom: 20px
+			width: 100%
+			min-height: 114px
+		&_name
+			font-weight: 700
+			font-size: 22px
+			margin-bottom: 26px
+		&_icon
+			width: 60px
+			height: 60px
+			background-color: #f0f3f6
+			border-radius: 50%
+			text-align: center
+			line-height: 0
+			font-size: 50px
+			margin-right: 20px
+		&_text
+			font-family: $monts
+			font-weight: 600
+			font-size: 16px	
+			color: #0d151b
+			line-height: 20px
+			margin: 0
+			& span
+				font-size: 14px
+				color: #888888
+		&:nth-of-type(2),
+		&:nth-of-type(3)
+			& .service-list_icon
+				font-size: 35px
+				line-height: 1.5
+				text-align: center
+/*-------------- SERVICE END------------------*/
